@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Brass Products</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #eee;
+      padding: 30px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    }
+    h1, h2, h3 {
+      color: #FFD700;
+    }
+    h4 {
+      color: #FFA500;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .card {
+      background: #2c2c2c;
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 15px;
+      flex: 1 1 45%;
+    }
+    ul li::before {
+      content: '▶';
+      color: #FFD700;
+      margin-right: 10px;
+    }
+    .highlight {
+      background: #FFD700;
+      color: #111;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .referral-section ul {
+      padding-left: 20px;
+    }
+    .referral-cols {
+      display: flex;
+      gap: 30px;
+    }
+    .referral-cols div {
+      flex: 1;
+    }
+    .top-profile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .top-profile img {
+      width: 180px;
+      height: 120px;
+      border-radius: 15px;
+      border: 2px solid #FFD700;
+      object-fit: cover;
+    }
+    .top-profile-info {
+      flex: 1;
+    }
+    .top-profile-info h2 {
+      font-size: 1.8rem;
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+    .top-profile-info p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .align-block p {
+      display: flex;
+      align-items: flex-start;
+    }
+    .align-block p strong {
+      flex-shrink: 0;
+      min-width: 110px;
+      color: #FFA500;
+    }
+    .align-block p span {
+      display: block;
+    }
+
+    .multi-column-list {
+      column-count: 3;        /* Change to 2 or 3 based on preference */
+      column-gap: 30px;       /* Space between columns */
+      list-style-type: disc;  /* Use your preferred list style */
+      list-style-position: outside;  /* ✅ Fixes bullet alignment */
+      padding-left: 0px;              /* Reset padding */
+      margin: 0px;
+    }
+
+    .multi-column-list li {
+      break-inside: avoid;    /* Prevents list items from breaking between columns */
+      margin-bottom: 8px;     /* Optional spacing */
+      text-align: left;
+      text-indent: -1em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="top-profile">
+      <img src="headshot.jpg" alt="Headshot">
+      <div class="top-profile-info">
+        <h2>Vinayak Kabra</h2>
+        <!-- <p> Hi. </p> -->
+      </div>
+    </div>
+
+    <div class="section">
+      <h1>Shri Krishna Udyog Metal Extruders Pvt. Ltd.</h1>
+      <p class="highlight">Manufacturers of Premium Brass Rods, Brass Utensils, and Brass Inserts</p>
+    </div>
+
+    <div class="section info-grid">
+      <div class="card align-block">
+        <h3>Business Overview</h3>
+        <p><strong>Category:</strong> <span>Brass Products</span></p>
+        <p><strong>Location:</strong> <span>Bhandara, Maharashtra</span></p>
+        <p><strong>Established:</strong> <span>1947</span></p>
+        <p><strong>Founder:</strong> <span>Hanumanbaxji Kabra</span></p>
+      </div>
+      <div class="card align-block">
+        <h3>Personal Information</h3>
+        <p><strong>Experience:</strong> <span><1 year of experience in manufacturing industry</span></p>
+        <p><strong>Education:</strong> <span>Master of Science (Computer Science)</span></p>
+        <p><strong>Background:</strong> <span>Tech-driven with manufacturing heritage</span></p>
+      </div>
+    </div>
+
+    <div class="section info-grid">
+      <div class="card align-block">
+        <h3>Hobbies</h3>
+        <li>Playing Cricket</li>
+        <li>Football</li>
+        <li>Gaming</li>
+        <li>Watching Sports and Movies</li>
+      </div>
+      <div class="card align-block">
+        <h3>Other Information</h3>
+        <p><strong>Other Interest: </strong> <span> UX, Food</span></p>
+        <p><strong>Nobody Knows: </strong> <span> Skydived from 18K feet (World's Highest SkyDiving), Monterey, California</span></p>
+      </div>
+    </div>
+
+    <div class="section">
+    <h2>Goals & Vision</h2>
+    <div class="section info-grid">
+      <div class="card align-block">
+        <h3>Professional Goals</h3>
+        <li>Become leading producers in brass products in Bhandara</li>
+        <li>Diversify product line</li>
+        <li>Efficient delegation and operations</li>
+      </div>
+      <div class="card align-block">
+        <h3>Personal Mission</h3>
+        <li>Increase the revenue by 20% in the next 2 year</li>
+        <li>Profitable and sustainable startup</li>
+        <li>Blend tech with tradition</li>
+      </div>
+    </div>
+  </div>
+
+    <!--
+  <p class="highlight">"Innovation and tradition in brass manufacturing"</p>
+    -->
+
+    <div class="section">
+      <h2>About Family</h2>
+      <div class="info-grid">
+        <div class="card">
+          <h3>Family Businesses</h3>
+          <ul>
+            <li><strong>Rice Mill:</strong> Steam & Para Boil processing</li>
+            <br>
+            <li><strong>Paper Mill:</strong> Kraft Paper manufacturing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Family Information</h3>
+          <ul>
+            <li><strong>Father:</strong> <span>Banwarilal Kabra (Paper Mill)</span></li>
+            <li><strong>Mother:</strong> <span>Pratima Kabra (Managing Farm)</span></li>
+            <li><strong>Brother:</strong> <span>Yagyawalk Kabra (Paper Mill)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Our Products</h2>
+      <p><img src="Products.jpg" alt="Description of image" width="700" height="800"></p>
+      <p style="margin-top: 10px;">We offer a wide range of brass components including rods, inserts, utensils and more with custom specifications tailored to client needs.</p>
+    </div>
+
+
+    <div class="section">
+      <h2>Networks</h2>
+      <ul class="multi-column-list">
+        <li>BNI</li>
+        <li>Maheshwari Yuva Sangathan Bhandara</li>
+        <li>Metal Manufacturers Association Bhandara</li>
+        <li>People working in corporate (Web design, AI/ML, etc)</li>
+        <li>SS Pipe Manufacturers in Ahmedabad</li>
+      </ul>
+    </div>
+
+
+    <div class="section">
+      <h2>Partnership & Referral Opportunities</h2>
+      <div class="referral-section">
+        <h3>Ideal Referrals</h3>
+        <div class="referral-cols">
+          <div>
+            <h4>Rods</h4>
+            <li>Brass Traders</li>
+          </div>
+          <div>
+            <h4>Brass Insert</h4>
+            <li>UPVC and CPVC pipe fittings manufacturers<li>Prince Pipe and Fittings, Mumbai</li>
+          </div>
+
+        </div>
+        <!-- <p class="highlight">great together!</p> -->
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Bad Referrals</h3>
+      
+        <p>Customers requiring Retail quantities (Very small Quantities of Goods). </p>
+      
+    </div>
+
+    <div class="section">
+      <h2>Contact Sphere</h2>
+      <ul class="multi-column-list">
+        <li>CPVC/UPVC Pipe Wholesalers / Dealers</li>
+        <li>CPVC Resin & Compound Suppliers</li>
+        <li>Packaging material suppliers</li>
+        <li>Corrugators</li>
+        <li>Oil Suppliers (Fuel Oils / Cutting Oils, etc.)</li>
+        <li>Chartered Accountants</li>
+        <li>Brass Components / Parts Manufacturers (Automotive / Electrical / Hardware Industry)</li>
+        <li>Architects</li>
+        <li>Furniture Manufacturers</li>
+        <li>Brass/ Copper Scrap Suppliers</li>
+        <li>Bearings / V Belts suppliers</li>
+        <li>Cutting Tools Suppliers</li>
+        <li>Refractory Materials suppliers</li>
+        <li>Safety Equipment Suppliers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Clients</h2>
+      <ul class="multi-column-list">
+        <li>Plasto Group, Nagpur (Mutual Connection)</li>
+        <li>Neema Forge Press Pvt Ltd, Nagpur (Self)</li>
+        <li>Sandeep Metalcraft Pvt Ltd, Nagpur (Mutual Connection)</li>
+        <li>HP Valves & Fittings India Pvt Ltd, Chennai (IndiaMart)</li>
+        <li>Areickal Industries, Navi Mumbai (IndiaMart)</li>
+        <li>Vijay Metal Syndicate, Mumbai (Brass Rods Traders) Consultant</li>
+        <li>Brass Rods traders located in Mumbai, Bangalore,
+          Chennai, Kolkata, Pune, Hyderabad, Delhi Self, Consultant, Brokers and/or IndiaMart
+          </li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
